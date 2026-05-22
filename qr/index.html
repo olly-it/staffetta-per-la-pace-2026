@@ -17,9 +17,7 @@
       display: inline-block;
       line-height: 0;
     }
-    .qr-card canvas,
-    .qr-card img,
-    .qr-card svg {
+    .qr-card img {
       display: block;
       width: clamp(220px, 70vw, 360px);
       height: auto;
@@ -69,12 +67,14 @@
       <h1 style="font-size: clamp(1.5rem, 4vw, 2.25rem); margin-bottom: 1.5rem;">
         Staffetta per la Pace 2026
       </h1>
-      <div class="qr-card" id="qrcode" aria-label="QR code della home page"></div>
+      <a href="staffetta-per-la-pace-2026-qr.png" class="qr-card" aria-label="Apri il QR code in dimensione originale">
+        <img src="staffetta-per-la-pace-2026-qr.png" alt="QR code che punta alla home di Staffetta per la Pace 2026" width="740" height="740" />
+      </a>
       <p class="qr-url">
-        <a id="qr-link" href="../">caricamento…</a>
+        <a href="../">https://olly-it.github.io/staffetta-per-la-pace-2026/</a>
       </p>
       <div class="qr-actions">
-        <button class="qr-btn" id="download-btn" type="button">Scarica PNG</button>
+        <a class="qr-btn" href="staffetta-per-la-pace-2026-qr.png" download>Scarica PNG</a>
         <a class="qr-btn" href="../">← Torna alla home</a>
       </div>
     </div>
@@ -82,43 +82,5 @@
       <p>&copy; 2026 Staffetta per la Pace</p>
     </footer>
   </main>
-
-  <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
-  <script>
-    (function () {
-      var homeUrl = new URL("../", window.location.href).href;
-      var linkEl = document.getElementById("qr-link");
-      linkEl.href = homeUrl;
-      linkEl.textContent = homeUrl;
-
-      var container = document.getElementById("qrcode");
-      var canvas = document.createElement("canvas");
-      container.appendChild(canvas);
-
-      QRCode.toCanvas(
-        canvas,
-        homeUrl,
-        {
-          width: 720,
-          margin: 1,
-          errorCorrectionLevel: "M",
-          color: { dark: "#0a3d62", light: "#ffffff" }
-        },
-        function (err) {
-          if (err) {
-            container.textContent = "Errore nella generazione del QR code.";
-            console.error(err);
-          }
-        }
-      );
-
-      document.getElementById("download-btn").addEventListener("click", function () {
-        var link = document.createElement("a");
-        link.download = "staffetta-per-la-pace-2026-qr.png";
-        link.href = canvas.toDataURL("image/png");
-        link.click();
-      });
-    })();
-  </script>
 </body>
 </html>
