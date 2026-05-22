@@ -265,6 +265,14 @@ h1 .dash {
   white-space: nowrap;
 }
 
+h1 .h1-line {
+  display: block;
+}
+
+h1 .h1-line + .h1-line {
+  margin-top: 0.25rem;
+}
+
 .section-intro {
   color: var(--color-muted);
   font-size: clamp(1rem, 2.5vw, 1.15rem);
