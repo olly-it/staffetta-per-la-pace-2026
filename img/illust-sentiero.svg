@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" fill="none" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <!-- sentiero in salita verso le montagne -->
+  <!-- montagne sullo sfondo -->
+  <path d="M10 70 L 50 30 L 80 55 L 120 20 L 160 50 L 190 35" opacity=".55" />
+  <!-- sentiero a zigzag -->
+  <path d="M30 90 Q 60 80 80 75 T 130 60 T 170 35" stroke-dasharray="4 4" />
+  <!-- sole -->
+  <circle cx="155" cy="25" r="6" fill="#ffffff" fill-opacity=".2" />
+  <!-- impronte lungo il sentiero -->
+  <ellipse cx="60" cy="83" rx="2.5" ry="3.5" fill="#ffffff" stroke="none" opacity=".55" transform="rotate(-15 60 83)" />
+  <ellipse cx="90" cy="72" rx="2.5" ry="3.5" fill="#ffffff" stroke="none" opacity=".55" transform="rotate(-20 90 72)" />
+  <ellipse cx="120" cy="60" rx="2.5" ry="3.5" fill="#ffffff" stroke="none" opacity=".55" transform="rotate(-25 120 60)" />
+  <ellipse cx="148" cy="48" rx="2.5" ry="3.5" fill="#ffffff" stroke="none" opacity=".55" transform="rotate(-30 148 48)" />
+</svg>

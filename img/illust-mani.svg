@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" fill="none" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <!-- due mani aperte che si offrono -->
+  <!-- mano sinistra -->
+  <path d="M55 80 q-5 -25 5 -38 q4 -5 8 -2 q-2 8 0 14 q3 -10 9 -10 q5 0 4 8 q-1 6 -2 12 q4 -6 10 -4 q5 2 1 10 q-2 5 -5 10 z" fill="#ffffff" fill-opacity=".12" />
+  <!-- mano destra (specchiata) -->
+  <path d="M145 80 q5 -25 -5 -38 q-4 -5 -8 -2 q2 8 0 14 q-3 -10 -9 -10 q-5 0 -4 8 q1 6 2 12 q-4 -6 -10 -4 q-5 2 -1 10 q2 5 5 10 z" fill="#ffffff" fill-opacity=".12" />
+  <!-- piccolo cuore tra le mani -->
+  <path d="M100 50 c -6 -10 -16 -2 -10 6 c 2 4 8 8 10 10 c 2 -2 8 -6 10 -10 c 6 -8 -4 -16 -10 -6 z" fill="#ffffff" fill-opacity=".25" />
+</svg>

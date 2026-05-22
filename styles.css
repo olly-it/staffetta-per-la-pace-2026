@@ -420,6 +420,14 @@ h1 .dash {
   margin-right: 0.1em;
 }
 
+.reading-illust {
+  display: block;
+  width: clamp(140px, 35%, 220px);
+  height: auto;
+  margin: 0 auto 1.5rem;
+  opacity: 0.85;
+}
+
 .reading .verse {
   white-space: normal;
 }

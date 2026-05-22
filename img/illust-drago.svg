@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" fill="none" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <!-- san Giorgio e il drago, stilizzato — solo lancia e drago avvolto -->
+  <!-- drago a serpentina -->
+  <path d="M150 75 q -20 -8 -40 0 q -25 8 -50 -2 q -10 -4 -15 -12" />
+  <!-- corpo drago: scaglie -->
+  <path d="M55 65 q 3 -4 7 0 M70 60 q 3 -4 7 0 M88 56 q 3 -4 7 0 M108 56 q 3 -4 7 0 M128 60 q 3 -4 7 0" opacity=".7" />
+  <!-- testa del drago a sinistra -->
+  <path d="M45 60 q -8 -2 -12 4 q 6 4 12 2" fill="#ffffff" fill-opacity=".15" />
+  <circle cx="38" cy="60" r="1" fill="#ffffff" stroke="none" />
+  <!-- corna -->
+  <path d="M40 56 l -3 -6 M44 56 l 0 -7" />
+  <!-- ali -->
+  <path d="M85 55 q 10 -20 20 -22 q -2 14 -12 22" opacity=".6" />
+  <!-- lancia che trafigge -->
+  <line x1="20" y1="20" x2="120" y2="80" stroke-width="1.8" />
+  <path d="M118 78 l 6 6 l -6 -2 l -4 -2 z" fill="#ffffff" stroke="none" />
+  <path d="M22 22 l -4 -4 M20 24 l -4 -4" stroke-width="1.8" />
+</svg>

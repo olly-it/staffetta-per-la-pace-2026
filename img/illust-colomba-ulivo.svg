@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" fill="none" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <!-- colomba stilizzata in volo -->
+  <path d="M70 55 q-15 -10 -30 -8 q15 -2 20 -10 q-5 18 10 22 z" opacity=".9" fill="#ffffff" fill-opacity=".15" />
+  <path d="M70 55 q15 -8 25 -22 q5 12 -2 22 q15 -2 25 -12 q-8 18 -28 22 z" fill="#ffffff" fill-opacity=".15" />
+  <circle cx="98" cy="42" r="1.5" fill="#ffffff" stroke="none" />
+  <!-- becco con ramo d'ulivo -->
+  <path d="M120 50 l10 -2" />
+  <!-- ramoscello -->
+  <path d="M130 48 q 20 -6 45 -2" />
+  <!-- foglie d'ulivo -->
+  <path d="M140 46 q 4 -6 12 -6 q -4 6 -12 6 z" fill="#ffffff" fill-opacity=".2" />
+  <path d="M155 44 q 4 -6 12 -6 q -4 6 -12 6 z" fill="#ffffff" fill-opacity=".2" />
+  <path d="M148 50 q 6 4 14 4 q -2 -6 -14 -4 z" fill="#ffffff" fill-opacity=".2" />
+  <path d="M165 46 q 6 4 12 4 q -2 -6 -12 -4 z" fill="#ffffff" fill-opacity=".2" />
+</svg>

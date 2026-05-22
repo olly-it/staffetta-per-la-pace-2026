@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" fill="none" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <!-- sole nascente sopra l'orizzonte -->
+  <line x1="20" y1="78" x2="180" y2="78" />
+  <!-- sole / mezzo cerchio -->
+  <path d="M70 78 a 30 30 0 0 1 60 0" fill="#ffffff" fill-opacity=".18" />
+  <!-- raggi del sole -->
+  <line x1="100" y1="30" x2="100" y2="20" opacity=".7" />
+  <line x1="78" y1="38" x2="72" y2="30" opacity=".7" />
+  <line x1="122" y1="38" x2="128" y2="30" opacity=".7" />
+  <line x1="62" y1="55" x2="52" y2="52" opacity=".7" />
+  <line x1="138" y1="55" x2="148" y2="52" opacity=".7" />
+  <!-- stelle -->
+  <g opacity=".75">
+    <circle cx="35" cy="30" r="1.4" fill="#ffffff" stroke="none" />
+    <circle cx="55" cy="20" r="1" fill="#ffffff" stroke="none" />
+    <circle cx="160" cy="25" r="1.4" fill="#ffffff" stroke="none" />
+    <circle cx="175" cy="40" r="1" fill="#ffffff" stroke="none" />
+    <circle cx="25" cy="55" r="1" fill="#ffffff" stroke="none" />
+  </g>
+</svg>
