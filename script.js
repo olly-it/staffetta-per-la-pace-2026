@@ -1,5 +1,5 @@
 (function () {
-  var ROUTES = ["home", "tappe", "riflessioni"];
+  var ROUTES = ["home", "tappe", "riflessioni", "share"];
   var DEFAULT_ROUTE = "home";
 
   var sections = {};
@@ -60,4 +60,37 @@
 
   window.addEventListener("hashchange", onHashChange);
   onHashChange();
+
+  // Share section: show home URL and wire up copy / native share
+  var shareUrlEl = document.getElementById("share-url");
+  if (shareUrlEl) {
+    var homeUrl = new URL("./", window.location.href).href;
+    shareUrlEl.href = homeUrl;
+    shareUrlEl.textContent = homeUrl;
+
+    var copyBtn = document.getElementById("share-copy");
+    if (copyBtn && navigator.clipboard) {
+      copyBtn.addEventListener("click", function () {
+        navigator.clipboard.writeText(homeUrl).then(function () {
+          var original = copyBtn.textContent;
+          copyBtn.textContent = "Copiato!";
+          setTimeout(function () { copyBtn.textContent = original; }, 1800);
+        });
+      });
+    } else if (copyBtn) {
+      copyBtn.hidden = true;
+    }
+
+    var nativeBtn = document.getElementById("share-native");
+    if (nativeBtn && navigator.share) {
+      nativeBtn.hidden = false;
+      nativeBtn.addEventListener("click", function () {
+        navigator.share({
+          title: "Agesci Liguria – Costruttori di Pace",
+          text: "Da Ventimiglia a Sarzana, 22–23–24 maggio 2026",
+          url: homeUrl
+        }).catch(function () { /* user dismissed */ });
+      });
+    }
+  }
 })();

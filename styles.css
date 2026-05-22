@@ -398,6 +398,66 @@ h1 .dash {
   background: rgba(255, 255, 255, 0.15);
 }
 
+/* ---------- Share section (QR code) ---------- */
+
+.qr-card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+  display: inline-block;
+  line-height: 0;
+  margin-bottom: 1.5rem;
+}
+
+.qr-card img {
+  display: block;
+  width: clamp(220px, 60vw, 320px);
+  height: auto;
+}
+
+.qr-url {
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  color: var(--color-muted);
+  word-break: break-all;
+  max-width: 480px;
+}
+
+.qr-url a {
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.qr-url a:hover {
+  border-bottom-color: #ffffff;
+}
+
+.qr-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.qr-btn {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: inherit;
+  transition: background 0.2s;
+}
+
+.qr-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
 /* ---------- Map figure ---------- */
 
 .map-figure {

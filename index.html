@@ -25,6 +25,7 @@
       <a href="#home" data-route="home">Home</a>
       <a href="#tappe" data-route="tappe">Tappe</a>
       <a href="#riflessioni" data-route="riflessioni">Spunti di riflessione</a>
+      <a href="#share" data-route="share">Condividi</a>
     </nav>
   </header>
 
@@ -115,6 +116,27 @@
       <div class="content">
         <h2>Spunti di riflessione</h2>
         <p class="tagline">TODO: contenuto degli spunti di riflessione in arrivo.</p>
+      </div>
+    </section>
+
+    <section id="share" class="route route--center" data-route="share" hidden>
+      <div class="content">
+        <h2>Condividi</h2>
+        <p class="section-intro">
+          Inquadra il QR code per aprire questo sito sul tuo smartphone,
+          o condividi il link con chi vuoi.
+        </p>
+        <a href="staffetta-per-la-pace-2026-qr.png" class="qr-card" aria-label="Apri il QR code in dimensione originale">
+          <img src="staffetta-per-la-pace-2026-qr.png" alt="QR code che punta alla home di Agesci Liguria – Costruttori di Pace" width="740" height="740" />
+        </a>
+        <p class="qr-url">
+          <a id="share-url" href="./">caricamento…</a>
+        </p>
+        <div class="qr-actions">
+          <button class="qr-btn" id="share-copy" type="button">Copia link</button>
+          <button class="qr-btn" id="share-native" type="button" hidden>Condividi…</button>
+          <a class="qr-btn" href="staffetta-per-la-pace-2026-qr.png" download>Scarica QR (PNG)</a>
+        </div>
       </div>
     </section>
   </main>
