@@ -65,12 +65,24 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
-.year {
-  font-size: clamp(1.25rem, 4vw, 2rem);
+.subtitle {
+  font-size: clamp(1rem, 3vw, 1.5rem);
   font-weight: 300;
   color: var(--color-muted);
   margin-bottom: 2rem;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.04em;
+  max-width: 640px;
+  line-height: 1.4;
+}
+
+.subtitle .sep {
+  display: inline-block;
+  margin: 0 0.5rem;
+  opacity: 0.6;
+}
+
+h1 .dash {
+  white-space: nowrap;
 }
 
 .tagline {
