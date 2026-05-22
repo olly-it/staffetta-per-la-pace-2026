@@ -481,6 +481,36 @@ h1 .dash {
   user-select: none;
 }
 
+.pdf-link-row {
+  text-align: center;
+  margin: 0 0 1rem;
+}
+
+.pdf-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1.5rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.pdf-link:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-1px);
+}
+
+.pdf-link-icon {
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
 /* ---------- Call-to-action buttons ---------- */
 
 .cta-row {
