@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="QR Code — Staffetta per la Pace 2026" />
+  <meta name="theme-color" content="#0a3d62" />
+  <title>QR Code — Staffetta per la Pace 2026</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%95%8A%EF%B8%8F%3C/text%3E%3C/svg%3E" />
+  <style>
+    .qr-card {
+      background: #ffffff;
+      padding: 1.5rem;
+      border-radius: 16px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+      display: inline-block;
+      line-height: 0;
+    }
+    .qr-card canvas,
+    .qr-card img,
+    .qr-card svg {
+      display: block;
+      width: clamp(220px, 70vw, 360px);
+      height: auto;
+    }
+    .qr-url {
+      margin-top: 1.5rem;
+      font-size: 0.95rem;
+      color: var(--color-muted);
+      word-break: break-all;
+      max-width: 480px;
+    }
+    .qr-url a {
+      color: #ffffff;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    }
+    .qr-url a:hover {
+      border-bottom-color: #ffffff;
+    }
+    .qr-actions {
+      margin-top: 1.5rem;
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .qr-btn {
+      background: rgba(255, 255, 255, 0.15);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      padding: 0.6rem 1.2rem;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      text-decoration: none;
+      font-family: inherit;
+      transition: background 0.2s;
+    }
+    .qr-btn:hover {
+      background: rgba(255, 255, 255, 0.25);
+    }
+  </style>
+</head>
+<body>
+  <main class="hero">
+    <div class="content">
+      <h1 style="font-size: clamp(1.5rem, 4vw, 2.25rem); margin-bottom: 1.5rem;">
+        Staffetta per la Pace 2026
+      </h1>
+      <div class="qr-card" id="qrcode" aria-label="QR code della home page"></div>
+      <p class="qr-url">
+        <a id="qr-link" href="../">caricamento…</a>
+      </p>
+      <div class="qr-actions">
+        <button class="qr-btn" id="download-btn" type="button">Scarica PNG</button>
+        <a class="qr-btn" href="../">← Torna alla home</a>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>&copy; 2026 Staffetta per la Pace</p>
+    </footer>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+  <script>
+    (function () {
+      var homeUrl = new URL("../", window.location.href).href;
+      var linkEl = document.getElementById("qr-link");
+      linkEl.href = homeUrl;
+      linkEl.textContent = homeUrl;
+
+      var container = document.getElementById("qrcode");
+      var canvas = document.createElement("canvas");
+      container.appendChild(canvas);
+
+      QRCode.toCanvas(
+        canvas,
+        homeUrl,
+        {
+          width: 720,
+          margin: 1,
+          errorCorrectionLevel: "M",
+          color: { dark: "#0a3d62", light: "#ffffff" }
+        },
+        function (err) {
+          if (err) {
+            container.textContent = "Errore nella generazione del QR code.";
+            console.error(err);
+          }
+        }
+      );
+
+      document.getElementById("download-btn").addEventListener("click", function () {
+        var link = document.createElement("a");
+        link.download = "staffetta-per-la-pace-2026-qr.png";
+        link.href = canvas.toDataURL("image/png");
+        link.click();
+      });
+    })();
+  </script>
+</body>
+</html>
