@@ -360,56 +360,101 @@ h1 .dash {
   background: rgba(255, 255, 255, 0.7);
 }
 
-/* ---------- PDF-style readings (spunti di riflessione) ---------- */
+/* ---------- Readings (spunti di riflessione) ---------- */
 
-.pdf-h2 {
-  text-align: center;
-  margin-bottom: 2rem;
+.readings {
+  width: 100%;
 }
 
-.pdf-page {
-  background: #ffffff;
-  color: #000000;
+.reading {
   width: 100%;
+  font-size: clamp(1rem, 1.6vw, 1.125rem);
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.92);
+  margin: 0 auto;
   max-width: 720px;
-  margin: 0 auto 2rem;
-  padding: clamp(2rem, 5vw, 3.5rem) clamp(1.5rem, 5vw, 3rem);
-  border-radius: 4px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
-  font-family: "Times New Roman", Times, Georgia, serif;
-  font-size: clamp(0.95rem, 1.5vw, 1.05rem);
-  line-height: 1.5;
   text-align: left;
 }
 
-.pdf-page p {
-  margin: 0 0 0.75rem;
-  color: #000000;
+.reading p {
+  margin: 0 0 1rem;
+  hyphens: auto;
+  -webkit-hyphens: auto;
 }
 
-.pdf-page p:last-child {
+.reading p:last-child {
   margin-bottom: 0;
 }
 
-.pdf-page .verse {
-  white-space: normal;
-  margin-bottom: 1rem;
+.reading strong {
+  color: #ffffff;
+  font-weight: 700;
 }
 
-.pdf-page .verse .indent {
+.reading em {
+  color: #ffffff;
+  font-style: italic;
+}
+
+.reading sup {
+  font-size: 0.7em;
+  vertical-align: super;
+  line-height: 0;
+  color: var(--color-muted);
+  margin-right: 0.1em;
+}
+
+.reading .verse {
+  white-space: normal;
+}
+
+.reading .verse .indent {
   display: inline-block;
   padding-left: 2.5rem;
 }
 
-.pdf-page .verse .indent2 {
+.reading .verse .indent2 {
   display: inline-block;
   padding-left: 4rem;
 }
 
-.pdf-page sup {
-  font-size: 0.7em;
-  vertical-align: super;
-  line-height: 0;
+.reading--image figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.reading--image img {
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+.reading--image img + img {
+  margin-top: -1px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.reading--image img:not(:last-child) {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.page-divider {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 1.4rem;
+  letter-spacing: 0.5em;
+  padding-left: 0.5em;
+  margin: 3rem 0;
+  user-select: none;
 }
 
 /* ---------- Call-to-action buttons ---------- */
