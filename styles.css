@@ -266,11 +266,12 @@ h1 .dash {
 }
 
 h1 .h1-line {
-  display: block;
+  display: block !important;
+  width: 100%;
 }
 
 h1 .h1-line + .h1-line {
-  margin-top: 0.25rem;
+  margin-top: 0.35rem;
 }
 
 .section-intro {
