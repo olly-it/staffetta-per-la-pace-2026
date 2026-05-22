@@ -360,6 +360,78 @@ h1 .dash {
   background: rgba(255, 255, 255, 0.7);
 }
 
+/* ---------- Readings (spunti di riflessione) ---------- */
+
+.reading {
+  width: 100%;
+  margin-bottom: 2.5rem;
+  padding: 1.75rem clamp(1.25rem, 4vw, 2.25rem);
+  background: rgba(255, 255, 255, 0.08);
+  border-left: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.reading:last-child {
+  margin-bottom: 1rem;
+}
+
+.reading h3 {
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+}
+
+.reading h3 .reading-author {
+  font-weight: 300;
+  color: var(--color-muted);
+}
+
+.reading .prose {
+  margin-bottom: 0;
+}
+
+.reading blockquote {
+  margin: 0 0 1.25rem;
+  padding-left: 1rem;
+  border-left: 2px solid rgba(255, 255, 255, 0.3);
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.reading blockquote p {
+  margin-bottom: 1rem;
+}
+
+.reading cite {
+  font-style: italic;
+  color: var(--color-muted);
+  font-size: 0.9em;
+}
+
+.reading-source {
+  font-size: 0.92em;
+  color: var(--color-muted);
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+.reading-epigraph {
+  font-style: italic;
+  color: var(--color-muted);
+  margin-bottom: 1rem;
+}
+
+.reading .amen {
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  margin-top: 0.5rem;
+}
+
 /* ---------- Call-to-action buttons ---------- */
 
 .cta-row {
