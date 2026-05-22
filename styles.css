@@ -228,7 +228,6 @@ body {
   font-size: clamp(4rem, 15vw, 7rem);
   line-height: 1;
   margin-bottom: 1.5rem;
-  animation: float 4s ease-in-out infinite;
 }
 
 h1 {
@@ -428,14 +427,8 @@ h1 .dash {
   }
 }
 
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-}
-
 @media (prefers-reduced-motion: reduce) {
-  .route,
-  .logo {
+  .route {
     animation: none;
   }
 }
